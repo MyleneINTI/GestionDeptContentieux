@@ -1,8 +1,10 @@
 package com.adaming.entities;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,6 +26,17 @@ public class Utilisateur implements Serializable{
 	private String email;
 	private String nom;
 	private String prenom;
+	
+	//Pour Spring Security
+	@Column(unique = true)
+	private String username;
+	private String password;
+	
+	@ManyToMany
+	@JoinTable( name = "PROFIL",
+				joinColumns = @JoinColumn(name = "UTILISATEUR_ID", referencedColumnName = "idUtilisateur"),
+				inverseJoinColumns = @JoinColumn(name = "ROLE_ID", table = "role", referencedColumnName = "idRole"))
+	private Set<Role> roles = new HashSet<Role>();
 	
 	@ManyToMany
 	@JoinTable(	name = "UTILISATEUR_TACHE",
