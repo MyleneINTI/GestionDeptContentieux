@@ -20,9 +20,6 @@ public class AffaireController {
 	@Autowired
 	IAffaireService affaireService;
 	
-	@Autowired
-	private PasswordEncoder passwordEncoder;
-	
 	@RequestMapping(value="affaires", method=RequestMethod.GET)
 	public List<Affaire> findAll() {
 		return affaireService.find(Affaire.class);
