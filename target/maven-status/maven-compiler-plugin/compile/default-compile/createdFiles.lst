@@ -3,6 +3,7 @@ com\adaming\dao\impl\PhaseDAO.class
 com\adaming\interfaces\ITribunalDAO.class
 com\adaming\service\impl\TribunalService.class
 com\adaming\dao\impl\TacheDAO.class
+com\adaming\service\impl\RoleService.class
 com\adaming\service\impl\UtilisateurService.class
 com\adaming\service\interfaces\IAffaireService.class
 com\adaming\service\impl\ServiceGenericImpl.class
@@ -12,6 +13,7 @@ com\adaming\dao\impl\UtilisateurDAO.class
 com\adaming\interfaces\ITacheDAO.class
 com\adaming\service\impl\DocumentAffaire.class
 com\adaming\entities\Tache.class
+com\adaming\entities\Role.class
 com\adaming\entities\Affaire.class
 com\adaming\service\interfaces\ITacheService.class
 com\adaming\entities\Phase.class
@@ -25,10 +27,13 @@ com\adaming\dao\impl\AffaireDAO.class
 com\adaming\service\interfaces\IUtilisateurService.class
 com\adaming\run\Test.class
 com\adaming\interfaces\IDocumentDAO.class
+com\adaming\interfaces\IRoleDAO.class
+com\adaming\dao\impl\RoleDAO.class
 com\adaming\interfaces\IUtilisateurDAO.class
 com\adaming\interfaces\IAffaireDAO.class
 com\adaming\service\interfaces\ITribunalService.class
 com\adaming\entities\Utilisateur.class
+com\adaming\service\interfaces\IRoleService.class
 com\adaming\service\impl\PhaseService.class
 com\adaming\service\impl\TacheService.class
 com\adaming\service\interfaces\IDocumentService.class

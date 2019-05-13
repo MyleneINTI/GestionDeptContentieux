@@ -36,7 +36,7 @@ public class Test {
 //		Utilisateur u3 = new Utilisateur(1l, "mail", "nom1", "prenom1");
 //		utilisateurService.update(u3);
 			
-		utilisateurService.delete(u3);
+//		utilisateurService.delete(u3);
 
 	}
 
